@@ -1,18 +1,34 @@
+## -Requirements and Analyses: Project Proposal-
+## Food Scanner
+
+| Project Leader    | Stefan Landvoigt |
+|-------------------|------------------|
+| Created on        | 1/10/2021        |
+| Last changed      | 8/10/2021 11:50  |
+| Processing status | in process       |
+
+|    | Change |         |                  |                        |        |       |
+|----|--------|---------|------------------|------------------------|--------|-------|
+| No | Date   | Version | Changed Chapters | Description of changes | Author | State |
+|    |        |         |                  |                        |        |       |
+
 **Content**
 
-1 Introduction 4
+1 Introduction -> 4
 
-2 Initial Situation 5
+2 Initial Situation -> 5
 
-3 General Conditions and Constraints 7
+3 General Conditions and Constraints -> 7
 
-4 Project Objectives and System Concepts 8
+4 Project Objectives and System Concepts -> 8
 
-5 Opportunities and Risks 9
+5 Opportunities and Risks -> 9
 
-6 Planning 10
+6 Planning -> 10
 
-# 1Introduction
+
+
+# 1. Introduction
 
 Einordnung des Dokuments
 
@@ -20,9 +36,9 @@ The management bases the decision to approve a project within the scope of a Pro
 
 All written text in this color is explanatory and has to be deleted when the document is released. The example given here is only a skeleton. Your text has to be more elaborate and explanatory.
 
-[Insert your text here...]
+Mit unseren Projekt "Food Scanner" kann man mit einer Kamera, die an einen Raspberry Pi angeschlossen ist, Nahrungsmittel scannen und überprüfen, ob diese Gesundheitsfördernd sind oder nicht. Immer mehr Leute sind sich indessen nicht bewusst, welche Lebensmittel ungesund sind und deswegen wollen wir dieser Krise, mit diesem geilen Produkt, den Kampf ansagen.
 
-# 2Initial Situation
+# 2. Initial Situation
 
 The initial situation presents the **assessment of the actual situation** of an organizational unit or the entire organization of an agency or company. Thus a need for action, which may lead to a product or system vision, is recognizable. The vision may be developed into a project idea. The need for action may be initiated by several project or system ideas.
 
@@ -66,7 +82,7 @@ _The documentation of the examinations can be automated. So the reports and furt
 
 example
 
-# 3General Conditions and Constraints
+# 3. General Conditions and Constraints
 
 example
 
@@ -82,7 +98,7 @@ Example:
 
 _[Insert your text here...]_
 
-# 4Project Objectives and System Concepts
+# 4. Project Objectives and System Concepts
 
 In the Subject Project Objectives and System Concepts, the acquirer describes his vision of a new project or system on a high abstraction level. Project objectives and system concepts may concern several aspects, e.g., the introduction of innovations, the definition of objectives (quality, deadline and cost objectives), the operation of the system in its operating environment and the use of new, improved functionalities.
 
@@ -106,7 +122,7 @@ _The project objectives can be summarized as follows:_
 
 [Insert your text here...]
 
-# 5Opportunities and Risks
+# 5. Opportunities and Risks
 
 The Subject Opportunities and Risks comprises data which are normally prepared in industrial business plans. Frequently, an anonymous market with potential acquirers, which could be interested in the new product or system idea, will be analyzed at first. Therefore, the contents of this subject is characterized by a certain uncertainty or fuzziness. The subjects examines the chances of achieving profit on the market with a specific product or system. In addition to the chances, the risks of failing on the market or sustaining losses with a product or system should be analyzed.
 
@@ -132,7 +148,7 @@ _The following risk have to be taken into account._
 
 [Insert your text here...]
 
-# 6Planning
+# 6. Planning
 
 The planning specifies the organizational and commercial project execution and system development aspects. The project organization, e.g., matrix organization and steering committees, and the responsibilities for the decision-making processes within project will be specified.
 
