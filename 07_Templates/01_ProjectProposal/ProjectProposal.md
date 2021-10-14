@@ -14,17 +14,17 @@
 
 **Content**
 
-1 Introduction -> 4
+1 Introduction
 
-2 Initial Situation -> 5
+2 Initial Situation
 
-3 General Conditions and Constraints -> 7
+3 General Conditions and Constraints
 
-4 Project Objectives and System Concepts -> 8
+4 Project Objectives and System Concepts
 
-5 Opportunities and Risks -> 9
+5 Opportunities and Risks
 
-6 Planning -> 10
+6 Planning
 
 
 
@@ -36,7 +36,7 @@ The management bases the decision to approve a project within the scope of a Pro
 
 All written text in this color is explanatory and has to be deleted when the document is released. The example given here is only a skeleton. Your text has to be more elaborate and explanatory.
 
-Mit unseren Projekt "Food Scanner" kann man mit einer Kamera, die an einen Raspberry Pi angeschlossen ist, Nahrungsmittel scannen und überprüfen, ob diese Gesundheitsfördernd sind oder nicht. Immer mehr Leute sind sich indessen nicht bewusst, welche Lebensmittel ungesund sind und deswegen wollen wir dieser Krise, mit diesem geilen Produkt, den Kampf ansagen.
+Mit unseren Projekt "Food Scanner" kann man mit einer Kamera, die an einen Raspberry Pi angeschlossen ist, Nahrungsmittel scannen und überprüfen, ob diese Gesundheitsfördernd sind oder nicht. Eine KI scannt dann die Produkte und findet heraus um welches Produkt es sich handelt. Danach werden die Nährwerte dieses Projektes ausgegeben. Die Daten der Nährwerte speichern wir in einer Datenbank. Immer mehr Leute sind sich indessen nicht bewusst, welche Lebensmittel ungesund sind und deswegen wollen wir dieser Krise, mit diesem geilen Produkt, den Kampf ansagen. Durch unser Produkt wollen wir die Gesundheit der Menschen fördern, außerdem soll einem das Abnehmen so leichter fallen.
 
 # 2. Initial Situation
 
@@ -78,9 +78,9 @@ _The creation of the paperwork is time-consuming since the health data collected
 
 _The documentation of the examinations can be automated. So the reports and further documents will be generated. The medical history will be persisted automatically._
 
-[Insert your text here...]
+Bis jetzt haben wir noch nicht mit dem Projekt angefangen. Wir haben also noch keine Fortschritte.
 
-example
+
 
 # 3. General Conditions and Constraints
 
@@ -96,7 +96,8 @@ Example:
 - _A backup concept is mandatory_
 - _The application is multi-language capable (english and german)_
 
-_[Insert your text here...]_
+
+Das Projekt braucht eine Datenbank mit verschiedenen Produkte, mit deren Nährwerten. Wir brauchen eine Website die dann die Nährwerte des Produktes ausgibt. Wir müssen außerdem die KI einbinden und die Kamera mit dem Rasperry Pi verbinden. 
 
 # 4. Project Objectives and System Concepts
 
@@ -120,7 +121,7 @@ _The project objectives can be summarized as follows:_
 
 • _Report is a one-click-job at the end of the day_
 
-[Insert your text here...]
+Sehr viele Leute ernähren sich unbewusst extrem ungesund und deshlab wollen wir genau diesen Leuten helfen sich gesünder zu ernähren. Außerdem wollen wir auch, dass die Leute mit unserem Projekt auch abnehmen.
 
 # 5. Opportunities and Risks
 
@@ -146,7 +147,11 @@ _The following risk have to be taken into account._
 
 • _Further there is no information, whether the staff is capable and willing to supply the students master data (names, classes, ...)._
 
-[Insert your text here...]
+Opportunities:
+
+-You can scan products and see if they are healthy.
+
+Risks:
 
 # 6. Planning
 
