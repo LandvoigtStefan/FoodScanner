@@ -38,7 +38,7 @@
 
 <!-- In Österreich gibt es etwa 600.000 übergewichtige Personen. 24 % der 7-14 Jährigen sind übergewichtig oder krankhaft übergewichtig. Dagegen wird bisher zuwenig unternommen, deswegen soll der Food-Scanner diese Marktlücke füllen, denn viele Menschen sind sich ihrer schlechten Ernährung nicht bewusst. Mithilfe diesem Produkt kann man sich die Nährwerte von Lebesmitten ansehen, wie z.B Kalorien, Eiweise, etc. und feststellen, ob ein Lebesmittel gesund bzw. gesundheitsfördern ist. -->
 
-#### Zurzeit gibt es keine bekannte App, die Lebensmittel scannen kann, da die meisten Food-Scanner-Apps einen Barcodescanner benutzen. Wir können mit unserem Produkt Lebensmittel ohne Barcode einscannen. Das hat einige Vorteile wie z.B:
+#### Aktuell informiert sich kaum jemand über die Nährwerte von gekauften Lebensmittel, das wird sich mit unserem Produkt ändern, weil man die Lebensmittel praktisch einscannen kann. Zurzeit gibt es keine bekannte App, die Lebensmittel scannen kann, da die meisten Food-Scanner-Apps einen Barcodescanner benutzen. Wir können mit unserem Produkt Lebensmittel ohne Barcode einscannen. Das hat einige Vorteile wie z.B:
 
 - Man kann alle Produkte eines Einkaufs gleichzeitig einscannen.
 - Man braucht nicht jedes Produkt einzeln einscannen.
