@@ -30,61 +30,23 @@
 
 # 1. Introduction
 
-Einordnung des Dokuments
-
-The management bases the decision to approve a project within the scope of a Project Progress Decision of the Decision Gate Project Approved on the project proposal, which is not prepared within the framework of the V-Model. Based on a project or system idea, the acquirer systematically describes the necessity of a project based on feasibility, affordability, market, and economic efficiency criteria. The project proposal processes subjects like the initial situation, existing framework conditions, project objectives and system concepts, chances and risks, and the economic efficiency.
-
-All written text in this color is explanatory and has to be deleted when the document is released. The example given here is only a skeleton. Your text has to be more elaborate and explanatory.
-
-Mit unseren Projekt "Food Scanner" kann man mit einer Kamera, die an einen Raspberry Pi angeschlossen ist, Nahrungsmittel scannen und überprüfen, ob diese Gesundheitsfördernd sind oder nicht. Eine KI scannt dann die Produkte und findet heraus um welches Produkt es sich handelt. Danach werden die Nährwerte dieses Projektes ausgegeben. Die Daten der Nährwerte speichern wir in einer Datenbank. Immer mehr Leute sind sich indessen nicht bewusst, welche Lebensmittel ungesund sind und deswegen wollen wir dieser Krise, mit diesem geilen Produkt, den Kampf ansagen. Durch unser Produkt wollen wir die Gesundheit der Menschen fördern, außerdem soll einem das Abnehmen so leichter fallen.
+#### Mit unseren Projekt "Food Scanner" kann man mit einer Kamera, die an einen Raspberry Pi angeschlossen ist, Nahrungsmittel scannen und überprüfen, ob diese Gesundheitsfördernd sind oder nicht. Eine KI scannt dann die Produkte und findet heraus um welches Produkt es sich handelt. Danach werden die Nährwerte dieses Produktes ausgegeben. Die Daten der Nährwerte speichern wir in einer Datenbank. Immer mehr Leute sind sich indessen nicht bewusst, welche Lebensmittel ungesund sind und deswegen wollen wir dieser Krise, mit diesem Produkt, den Kampf ansagen. Durch unser Produkt wollen wir die Gesundheit der Menschen fördern, außerdem soll einem das Abnehmen so leichter fallen.
 
 # 2. Initial Situation
 
-The initial situation presents the **assessment of the actual situation** of an organizational unit or the entire organization of an agency or company. Thus a need for action, which may lead to a product or system vision, is recognizable. The vision may be developed into a project idea. The need for action may be initiated by several project or system ideas.
 
-The demonstration of capability gaps (i.e. the difference between the necessary planned capabilities and the actually existing capabilities) in a company or agency may clearly show an urgent need for action in order to increase the efficiency or reduce costs. This need for action is presented as product or system idea, leading frequently to a concrete project proposal. Corresponsingly, the determination of the requirement to renew or improve a &quot;technically obsolete&quot; system (so-called &quot;system regeneration&quot;) or the recognition of market chances for a new product or system may lead to a project idea. The applicable data must be developed for the project proposal.
 
-Research programs or studies may also be the basis for project ideas; they will be concretized in a project proposal.
+<!-- In Österreich gibt es etwa 600.000 übergewichtige Personen. 24 % der 7-14 Jährigen sind übergewichtig oder krankhaft übergewichtig. Dagegen wird bisher zuwenig unternommen, deswegen soll der Food-Scanner diese Marktlücke füllen, denn viele Menschen sind sich ihrer schlechten Ernährung nicht bewusst. Mithilfe diesem Produkt kann man sich die Nährwerte von Lebesmitten ansehen, wie z.B Kalorien, Eiweise, etc. und feststellen, ob ein Lebesmittel gesund bzw. gesundheitsfördern ist. -->
 
-In der Ausgangslage werden beispielsweise folgende Informationen und Daten der zu untersuchenden Organisationseinheit im Hinblick auf die Projektidee beschrieben:
+#### Zurzeit gibt es keine bekannte App, die Lebensmittel scannen kann, da die meisten Food-Scanner-Apps einen Barcodescanner benutzen. Wir können mit unserem Produkt Lebensmittel ohne Barcode einscannen. Das hat einige Vorteile wie z.B:
 
-● Die Ist-Fähigkeiten der Organisation (was können wir?)
-
-● Die Soll-Fähigkeiten der Organisation (was wollen wir können?)
-
-● Ein Soll-Ist-Fähigkeitenvergleich (wo liegen die Defizite?)
-
-● Ein Fähigkeitsvergleich nach vorgegebenen Bewertungskriterien
-
-● Eine Skizze der Projektidee
-
-The initial situation presents the assessment of the actual situation of an organi- zational unit or the entire organization of an agency or company. Thus a need for action, which may lead to a product or system vision, is recognizable. The vision may be developed into a project idea. The need for action may be initiated by several project or system ideas. The demonstration of capability gaps (i.e. the difference between the necessary planned capabilities and the actually existing capabilities) in a company or agency may clearly show an urgent need for action in order to in- crease the efficiency or reduce costs. This need for action is presented as product or system idea, leading frequently to a concrete project proposal. Correspondingly, the determination of the requirement to renew or improve a &quot;technically obsolete&quot; system (so-called &quot;system regeneration&quot;) or the recognition of market chances for a new product or system may lead to a project idea. The applicable data must be de- veloped for the project proposal. Research programs or studies may also be the basis for project ideas; they will be concretized in a project proposal.
-
-The basic question could be summarized in German as follows:
-
-• Die Ist-Fähigkeiten der Organisation (was können wir?)
-
-• Die Soll-Fähigkeiten der Organisation (was wollen wir können?)
-
-• Ein Soll-Ist-Fähigkeitenvergleich (wo liegen die Defizite?)
-
-• Ein Fähigkeitsvergleich nach vorgegebenen Bewertungskriterien
-
-Example:
-
-_A doctor in a (primary) school examines the primary school students periodically. (S)he must report the results of this examinations and inform parents about medical defects. Sometimes the doctor has to refer students in problematic health condition to specialists._
-
-_The creation of the paperwork is time-consuming since the health data collected during the examinations has to be edited several times (once for the reports, once for the parents information, once for referral, etc. The information retrieval concerning the medical history of students is also time-consuming. The time spent on this work would be better used on direct contact time with students._
-
-_The documentation of the examinations can be automated. So the reports and further documents will be generated. The medical history will be persisted automatically._
-
-In Österreich gibt es etwa 600.000 übergewichtige Personen. 24 % der 7-14 Jährigen sind übergewichtig oder krankhaft übergewichtig. Dagegen wird bisher zuwenig unternommen, deswegen soll der Food-Scanner diese Marktlücke füllen, denn viele Menschen sind sich ihrer schlechten Ernährung nicht bewusst. Mithilfe diesem Produkt kann man sich die Nährwerte von Lebesmitten ansehen, wie z.B Kalorien, Eiweise, etc. und feststellen, ob ein Lebesmittel gesund bzw. gesundheitsfördern ist.
-
+- Man kann alle Produkte eines Einkaufs gleichzeitig einscannen.
+- Man braucht nicht jedes Produkt einzeln einscannen.
+- Produkte ohne Barcode können auch eingescannt werden z.B. Obst
+- Produkte mit ungültigen bzw. beschädigtem Barcode können auch eingescannt werden.
 
 
 # 3. General Conditions and Constraints
-
-example
 
 This subject describes the framework conditions to be observed by all stakeholders when the project idea is implemented into concrete measures for realizing the system. Framework conditions, e.g., budget situation, existing know-how, legal provisions, cooperations, commitment to partners and deadlines, may be turned into specifica- tions for project execution. Technical framework conditions, e.g., development en- vironments and platforms, IT infrastructure, applicable standards and regulations, or specifications of off-the-shelf products, lead to additional (non-functional) require- ments for system development.
 
