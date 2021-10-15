@@ -78,7 +78,7 @@ _The creation of the paperwork is time-consuming since the health data collected
 
 _The documentation of the examinations can be automated. So the reports and further documents will be generated. The medical history will be persisted automatically._
 
-Bis jetzt haben wir noch nicht mit dem Projekt angefangen. Wir haben also noch keine Fortschritte.
+In Österreich gibt es etwa 600.000 übergewichtige Personen. 24 % der 7-14 Jährigen sind übergewichtig oder krankhaft übergewichtig. Dagegen wird bisher zuwenig unternommen, deswegen soll der Food-Scanner diese Marktlücke füllen, denn viele Menschen sind sich ihrer schlechten Ernährung nicht bewusst. Mithilfe diesem Produkt kann man sich die Nährwerte von Lebesmitten ansehen, wie z.B Kalorien, Eiweise, etc. und feststellen, ob ein Lebesmittel gesund bzw. gesundheitsfördern ist.
 
 
 
