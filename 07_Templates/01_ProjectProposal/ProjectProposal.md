@@ -52,7 +52,7 @@
 - Benutzer kann dne Einkauf einfach scannen.
 - Der Benutzer sieht die Nährwerte des Produkts.
 - Die Nährwerte werden unterteilt in der Ausgabe ausgegeben(Zucker, Vitamine, Kohlenhydrahte, Fett, ...)
-- 
+  
 # 5. Opportunities and Risks
 
 #### Möglichkeiten:
@@ -71,8 +71,9 @@
 #### 
 1. Beschaffung der Hardware
 2. Zusammenbau der Hardware
-3. Programmierung der Software
-4. Programmierung und Design der Webseite
+3. Datenbank mit Nährwerten
+4. Programmierung der Software
+5. Programmierung und Design der Webseite
 
 ### <u>Assign project lead and other outstanding roles to team members</u>.
 #### Leader: Stefan Landvoigt, Member: Fritz Schernhammer, Florian Röbl
