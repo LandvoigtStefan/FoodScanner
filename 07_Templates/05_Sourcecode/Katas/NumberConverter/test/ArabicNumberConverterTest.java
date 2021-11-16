@@ -11,4 +11,9 @@ public class ArabicNumberConverterTest {
     public void itShouldReturn2_GivenII(){
         Assert.assertEquals(2,RomanNumberConverter.toArabic("II"));
     }
+
+    @Test
+    public void itShouldReturn3_GivenIII(){
+        Assert.assertEquals(3,RomanNumberConverter.toArabic("III"));
+    }
 }
