@@ -6,4 +6,9 @@ public class ArabicNumberConverterTest {
     public void itShouldReturn1_GivenI(){
         Assert.assertEquals(1,RomanNumberConverter.toArabic("I"));
     }
+
+    @Test
+    public void itShouldReturn2_GivenII(){
+        Assert.assertEquals(2,RomanNumberConverter.toArabic("II"));
+    }
 }
