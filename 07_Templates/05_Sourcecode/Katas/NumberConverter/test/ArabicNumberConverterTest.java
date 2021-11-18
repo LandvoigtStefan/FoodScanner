@@ -27,6 +27,10 @@ public class ArabicNumberConverterTest {
     }
     @Test
     public void itShouldReturn1000_GivenM(){
-        Assert.assertEquals(1000,RomanNumberConverter.toArabic("Ms"));
+        Assert.assertEquals(1000,RomanNumberConverter.toArabic("M"));
+    }
+    @Test
+    public void itShouldReturn1978_GivenXIXDCCLXXXIV(){
+        Assert.assertEquals(1978,RomanNumberConverter.toArabic("MCMLXXVIII"));
     }
 }
