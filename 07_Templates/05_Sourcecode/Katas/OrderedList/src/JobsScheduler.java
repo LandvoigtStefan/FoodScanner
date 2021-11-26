@@ -46,15 +46,7 @@ public class JobsScheduler {
     }
 
     public void sort() {
-        char[] arr = new char[mJobs.size()];
-        for (int i = 0; i < arr.length; i++){
-            arr[i] = mJobs.get(i).getName().charAt(0);
-        }
-        Arrays.sort(arr);
-        mJobs.clear();
-        for (int i = 0; i < arr.length; i++) {
-            mJobs.add(new Job(Character.toString(arr[i])));
-        }
+
     }
 
 
