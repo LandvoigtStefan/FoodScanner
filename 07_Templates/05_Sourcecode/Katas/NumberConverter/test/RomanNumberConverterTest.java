@@ -55,4 +55,14 @@ public class RomanNumberConverterTest {
     public void itShouldReturnXIX_Given19() {
         Assert.assertEquals("XIX",RomanNumberConverter.toRoman(19));
     }
+
+    @Test
+    public void itShouldReturnM_Given1000() {
+        Assert.assertEquals("M",RomanNumberConverter.toRoman(1000));
+    }
+
+    @Test
+    public void itShouldReturnMDCCXCIV_Given1794() {
+        Assert.assertEquals("MDCCXCIV",RomanNumberConverter.toRoman(1794));
+    }
 }

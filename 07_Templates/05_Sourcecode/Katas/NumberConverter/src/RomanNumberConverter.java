@@ -1,3 +1,6 @@
+import java.util.HashMap;
+import java.util.Map;
+
 public class RomanNumberConverter {
     public RomanNumberConverter(){
 
@@ -15,6 +18,7 @@ public class RomanNumberConverter {
     }
 
     public static int toArabic(String romanNumber){
+<<<<<<< HEAD
         var arabicNumber = 0;
         if(romanNumber.indexOf(0) == 'V'){
             arabicNumber += 5;
@@ -24,11 +28,41 @@ public class RomanNumberConverter {
         }
         if(romanNumber == "II"){
             return 2;
+=======
+        Map<Character,Integer> numbersMap = new HashMap<>();
+        numbersMap.put('I',1);
+        numbersMap.put('V',5);
+        numbersMap.put('X',10);
+        numbersMap.put('L',50);
+        numbersMap.put('C',100);
+        numbersMap.put('D',500);
+        numbersMap.put('M',1000);
+
+        int result=0;
+
+        for(int i=0;i<romanNumber.length();i++)
+        {
+            char ch = romanNumber.charAt(i);
+            if(i>0 && numbersMap.get(ch) > numbersMap.get(romanNumber.charAt(i-1)))
+            {
+                result += numbersMap.get(ch) - 2*numbersMap.get(romanNumber.charAt(i-1));
+            }
+            else
+                result += numbersMap.get(ch);
+>>>>>>> ba5c893aa7d260309a8b2c22aaff3e5442439d30
         }
-        return 1;
+        return result;
     }
 
     enum Numeral{
+        ONETHUUSAND(1000,"M"),
+        NINEHUNDRED(900, "CM"),
+        FIVEHUNDRED(500, "D"),
+        FOURHUNDRED(400, "CD"),
+        ONEHUNDRED(100, "C"),
+        NINETY(90, "XC"),
+        FIFTY(50, "L"),
+        FORTY(40, "XL"),
         TEN(10,"X"),
         NINE(9,"IX"),
         FIVE(5,"V"),
