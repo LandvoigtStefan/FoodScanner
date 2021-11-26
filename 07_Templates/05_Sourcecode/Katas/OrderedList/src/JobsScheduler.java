@@ -23,13 +23,25 @@ public class JobsScheduler {
 
     public void registerJob(String dependentJob,String independentJob) {
         Job job = new Job(independentJob);
-        if(!listContainsJobName(independentJob)){
-            mJobs.add(job);
+        Job job2 = new Job(dependentJob);
+        if(!listContainsJobName(independentJob) && !listContainsJobName(dependentJob)){
+            mJobs.add(new Job(independentJob));
+            mJobs.add(new Job(dependentJob));
         }
-
-        Job job2 = new Job(dependentJob,job);
-        if(!listContainsJobName(dependentJob)){
-            mJobs.add(job2);
+        else if(!listContainsJobName(dependentJob)){
+            int index = mJobs.indexOf(job);
+            mJobs.add(index+1,job2);
+        }
+        else if(!listContainsJobName(independentJob)){
+            int index = mJobs.indexOf(job2);
+            if(index > 0){
+                mJobs.add(index-1,job);
+            }
+            else{
+                Job jobGetShifted = mJobs.get(0);
+                mJobs.add(0,job);
+                mJobs.add(1,jobGetShifted);
+            }
         }
     }
 
