@@ -21,4 +21,11 @@ public class ArabicNumberConverterTest {
     public void itShouldReturn5_GivenV(){
         Assert.assertEquals(5,RomanNumberConverter.toArabic("V"));
     }
+
+    @Test
+    public void itShouldReturnNumbersBetween6and8(){
+        Assert.assertEquals(6,RomanNumberConverter.toArabic("VI"));
+        Assert.assertEquals(7,RomanNumberConverter.toArabic("VII"));
+        Assert.assertEquals(8,RomanNumberConverter.toArabic("VII"));
+    }
 }
