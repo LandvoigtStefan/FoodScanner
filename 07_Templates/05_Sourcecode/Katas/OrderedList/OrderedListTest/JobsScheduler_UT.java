@@ -98,5 +98,20 @@ public class JobsScheduler_UT {
         Assert.assertEquals("AB",sut.getList());
     }
 
+    @Test
+    public void itShouldReturnABCDE_GivenDependecies(){
+        //arrange
+        var sut = new JobsScheduler();
+        sut.registerJob("D","C");
+        sut.registerJob("C","B");
+        sut.registerJob("B","A");
+        sut.registerJob("D","E");
+        sut.registerJob("E","A");
+        // act
+        sut.sort();
+        //assert
+        Assert.assertEquals("ABCDE",sut.getList());
+    }
+
 }
 
