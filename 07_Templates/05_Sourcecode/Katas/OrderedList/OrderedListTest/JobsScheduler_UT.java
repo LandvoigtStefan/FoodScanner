@@ -91,12 +91,11 @@ public class JobsScheduler_UT {
     public void itShouldReturnBA_GivenBA(){
         //arrange
         var sut = new JobsScheduler();
-        sut.registerJob("B");
-        sut.registerJob("A");
+        sut.registerJob("B","A");
         //act
         sut.sort();
         //assert
-        Assert.assertEquals("BA",sut.getList());
+        Assert.assertEquals("AB",sut.getList());
     }
 
 }
