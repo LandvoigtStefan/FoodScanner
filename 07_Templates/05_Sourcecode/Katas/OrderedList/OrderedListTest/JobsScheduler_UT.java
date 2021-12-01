@@ -111,5 +111,21 @@ public class JobsScheduler_UT {
         Assert.assertEquals("ABCD",sut.getList());
     }
 
+    @Test
+    public void itShouldReturnBAFCGVU_GivenDependencies(){
+        //arrange
+        var sut = new JobsScheduler();
+        sut.registerJob("A","B");
+        sut.registerJob("F","A");
+        sut.registerJob("C","F");
+        sut.registerJob("G","C");
+        sut.registerJob("V","G");
+        sut.registerJob("U","V");
+        // act
+        sut.sort();
+        //assert
+        Assert.assertEquals("BAFCGVU",sut.getList());
+    }
+
 }
 
