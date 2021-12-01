@@ -29,24 +29,42 @@ public class JobsScheduler {
             mJobs.add(new Job(dependentJob));
         }
         else if(!listContainsJobName(dependentJob)){
-            int index = mJobs.indexOf(job);
+            Job iJob = getJobAtIndex(job.getName());
+            int index = mJobs.indexOf(iJob);
             mJobs.add(index+1,job2);
         }
         else if(!listContainsJobName(independentJob)){
-            int index = mJobs.indexOf(job2);
-            if(index > 0){
+            Job iJob = getJobAtIndex(job2.getName());
+            int index = mJobs.indexOf(iJob);
+            /*if(index > 0){
                 mJobs.add(index-1,job);
             }
             else{
                 Job jobGetShifted = mJobs.get(0);
                 mJobs.add(0,job);
                 mJobs.add(1,jobGetShifted);
+            }*/
+            if(index == 0){
+                mJobs.push(job);
+            }
+            else {
+                mJobs.add(index - 1, job);
             }
         }
     }
 
+
     public void sort() {
 
+    }
+
+    public Job getJobAtIndex(String name){
+        for(var item : mJobs){
+            if(name == item.getName()){
+                return item;
+            }
+        }
+        return null;
     }
 
 
