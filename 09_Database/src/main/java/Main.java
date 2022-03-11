@@ -2,6 +2,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Main {
@@ -23,12 +24,12 @@ public class Main {
     }
     public static List<String> readFromFile(){
         try{
-            return Files.readAllLines(Paths.get("data/data.csv"));
+            return Files.readAllLines(Paths.get("data/DatabaseFoodReal.xlsx"));
         }
         catch (Exception e){
             System.out.println("Couldnt read from file!");
         }
-        return file;
+        return new LinkedList<>();
     }
     public static void splitFile(){
         for (int i = 1; i < file.size(); i++){
