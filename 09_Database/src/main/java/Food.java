@@ -5,9 +5,9 @@ public class Food {
     private String mName;
     private int mId;
     private String mFoodGroup;
-    HashMap<String, Integer> mNutritions;
-    public Food(Integer id, String name, String foodGroup, Integer calories, Integer fat, Integer proteins,
-                Integer carbohydrates, Integer sugar, Integer fiber, Integer cholesterol, Integer saturatedFats){
+    HashMap<String, String> mNutritions = new HashMap<>();
+    public Food(Integer id, String name, String foodGroup, String calories, String fat, String proteins,
+                String carbohydrates, String sugar, String fiber, String cholesterol, String saturatedFats){
         mName = name;
         mId = id;
         mFoodGroup = foodGroup;
@@ -31,5 +31,12 @@ public class Food {
 
     public String getmFoodGroup() {
         return mFoodGroup;
+    }
+
+    public HashMap<String, String> getmNutritions() {
+        for (int i = 0; i < mNutritions.size(); i++){
+            mNutritions.get(i).replace(".", "");
+        }
+        return mNutritions;
     }
 }
