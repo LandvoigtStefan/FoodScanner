@@ -2,6 +2,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.LinkedList;
 import java.util.List;
@@ -10,11 +11,10 @@ public class Main {
     public static List<String> file = null;
     public static List<Food> foodList = new LinkedList<>();
     private static Connection con;
-    public static void main(String[] args) {
-        String url = "jdbc:mysql://localhost:3306";
+    public static void main(String[] args) throws SQLException {
+        String url = "jdbc:mysql://localhost:3306/food_list";
         String user = "root";
         String pass = "";
-
         try{
             con = DriverManager.getConnection(url,user,pass);
             System.out.println("Verbindung geht oida!");
@@ -22,9 +22,17 @@ public class Main {
             statement.execute("CREATE TABLE FOOD (ID INT(6), NAME VARCHAR(30), FOOD_GROUP VARCHAR(30), CALORIES INT(6), FAT INT(6), PROTEINS INT(6), CARBOHYDRATES INT(6), SUAGAR INT(6), FIBER INT(6), CHOLESTEROL INT(6), SATURATED_FATS INT(6)");
         }catch (Exception e){
             System.out.println("Fuck");
-        };
+        }
         file = readFromFile();
         splitFile();
+        addToTable();
+    }
+    public static void addToTable() throws SQLException {
+        for (int i = 0; i < foodList.size(); i++){
+            Statement statement = con.createStatement();
+            statement.execute("INSERT INTO FOOD VALUES (" + foodList.get(i).getmId() + ", " + foodList.get(i).getmName()
+            + ", " + foodList.get(i).getmFoodGroup());
+        }
     }
     public static List<String> readFromFile(){
         try{
