@@ -18,8 +18,6 @@ public class Main {
         try{
             con = DriverManager.getConnection(url,user,pass);
             System.out.println("Verbindung geht oida!");
-            Statement statement = con.createStatement();
-            statement.execute("CREATE TABLE FOOD (ID INT(6), NAME VARCHAR(30), FOOD_GROUP VARCHAR(30), CALORIES INT(6), FAT INT(6), PROTEINS INT(6), CARBOHYDRATES INT(6), SUAGAR INT(6), FIBER INT(6), CHOLESTEROL INT(6), SATURATED_FATS INT(6)");
         }catch (Exception e){
             System.out.println("Fuck");
         }
@@ -28,10 +26,13 @@ public class Main {
         addToTable();
     }
     public static void addToTable() throws SQLException {
+        //Statement statement2 = con.createStatement();
+        //statement2.execute("INSERT INTO food SET name = 'John', id = '1';");
         for (int i = 0; i < foodList.size(); i++){
             Statement statement = con.createStatement();
-            statement.execute("INSERT INTO FOOD VALUES (" + foodList.get(i).getmId() + ", " + foodList.get(i).getmName()
-            + ", " + foodList.get(i).getmFoodGroup());
+            statement.execute("INSERT INTO food SET name = '" + foodList.get(i).getmName() + "', id = '" +
+                    foodList.get(i).getmId() + "', food_group = '" +
+                    foodList.get(i).getmFoodGroup() + "';");
         }
     }
     public static List<String> readFromFile(){
