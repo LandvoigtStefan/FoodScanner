@@ -71,6 +71,27 @@ html
     background-color: rgba(255, 255, 255, 0);
 }
 
+.switchButtons{
+    text-align: center;
+    margin-top: 10px;
+}
+
+#btn{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#btn:hover {
+    background-color: #69fd07; /* Green */
+    color: white;
+}
+
 #data-page > .container > .buttonRow{}
 /*=== End of info button ===*/
 
