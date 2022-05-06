@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', 'Lato', 'Helvetica Neue', 'Arial', sans-serif;
+    font-size: 16px;
+    background-color: rgba(0, 225, 255, 0.4);
+}
+
+html
+{
+    margin: 0;
+    padding: 0;
+}
+
+/*=== Start of showing picture ===*/
+#data-page > .container > .row >.col-6 > .scanned-pic{
+    background-image: url("../img/testPic.png");
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    border:  0.05rem solid black;
+    max-width: 200px;
+    min-width: 200px;
+    max-height: 200px;
+    min-height: 200px;
+    margin: 5rem auto 1rem auto;
+    position: relative;
+}
+
+#data-page > .container > .row >.col-6{
+    width: 100%;
+}
+/*=== End of showing picture ===*/
+
+
+/*=== Start of showing data ===*/
+
+#data-page > .container > .row > .col-6 > .infosOfScan > .isHealthy{
+    background-color: red;
+}
+
+#data-page > .container > .row > .col-6 > .infosOfScan > .box {
+
+    border:  0.05rem solid black;
+    height: 2rem;
+    max-width: 300px;
+    min-width: 300px;
+    margin: 0.5rem auto 0 auto;
+    position: relative;
+    padding-top: 7px;
+    padding-left: 2px;
+    font-size: small;
+}
+
+#data-page > .container > .row > .col-6 > .infosOfScan > .bstyle{
+    background-color: #ffffff;
+}
+
+/*=== End of showing data ===*/
+
+
+/*=== Start of info button ===*/
+#data-page > .container > .row >.infoButton{
+    position: fixed;
+    bottom: 3%;
+    right: -90%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#data-page > .container > .buttonRow{}
+/*=== End of info button ===*/
+
+
+.col-1{width: 16.666%;}
+.col-2{width: 33.333%;}
+.col-3{width: 50.000%;}
+.col-4{width: 66.666%;}
+.col-6{width: 100.00%;}
+
+
+@media (max-width: 1024px){
+
+    .col-1{width: 33.333%;}
+}
+
+@media (max-width: 768px){
+
+    .col-1{width: 50%;}
+    .col-2{width: 100%;}
+    .col-3{width: 100%;}
+    .col-4{width: 100%;}
+}
+
+@media (max-width: 480px){
+
+    .col-1{width: 100%;}
+    .col-2{width: 100%;}
+    .col-3{width: 100%;}
+    .col-4{width: 100%;}
+}
