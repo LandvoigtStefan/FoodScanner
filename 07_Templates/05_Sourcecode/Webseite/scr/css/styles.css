@@ -15,23 +15,28 @@ html
     margin: 0;
     padding: 0;
 }
-
+#canvas{
+    margin-top: 30px;
+    margin-left: 450px;
+}
 /*=== Start of showing picture ===*/
 #data-page > .container > .row >.col-6 > .scanned-pic{
-    background-image: url("../img/testPic.png");
-    background-size: 200px 200px;
+    background-size: 400px 400px;
     background-repeat: no-repeat;
-    border:  0.05rem solid black;
-    max-width: 200px;
-    min-width: 200px;
-    max-height: 200px;
-    min-height: 200px;
+    border:  0.0rem solid black;
+    max-width: 400px;
+    min-width: 400px;
+    max-height: 400px;
+    min-height: 400px;
     margin: 5rem auto 1rem auto;
     position: relative;
 }
-
+#video{
+    margin-top: 0px;
+}
 #data-page > .container > .row >.col-6{
     width: 100%;
+    height: 100%;
 }
 /*=== End of showing picture ===*/
 
