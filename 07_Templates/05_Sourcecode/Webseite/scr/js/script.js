@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function (){
     function handleSucess(stream){
         window.stream = stream;
         video.srcObject = stream;
+        video.style.ho
     }
 })
 
