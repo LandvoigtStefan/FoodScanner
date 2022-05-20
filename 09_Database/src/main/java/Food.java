@@ -34,9 +34,6 @@ public class Food {
     }
 
     public HashMap<String, String> getmNutritions() {
-        for (int i = 0; i < mNutritions.size(); i++){
-            mNutritions.get(i).replace(".", "");
-        }
         return mNutritions;
     }
 }

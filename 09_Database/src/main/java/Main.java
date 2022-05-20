@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -28,11 +29,54 @@ public class Main {
     public static void addToTable() throws SQLException {
         //Statement statement2 = con.createStatement();
         //statement2.execute("INSERT INTO food SET name = 'John', id = '1';");
+
         for (int i = 0; i < foodList.size(); i++){
-            Statement statement = con.createStatement();
-            statement.execute("INSERT INTO food SET name = '" + foodList.get(i).getmName() + "', id = '" +
-                    foodList.get(i).getmId() + "', food_group = '" +
-                    foodList.get(i).getmFoodGroup() + "';");
+            HashMap<String, String> nutrition = foodList.get(i).getmNutritions();
+            if (nutrition.get("Kalorien") == null){
+                nutrition.replace("Kalorien", null, "");
+            }
+            if (nutrition.get("Fett") == null){
+                nutrition.replace("Fett", null, "");
+            }
+            if (nutrition.get("Proteine") == null){
+                nutrition.replace("Proteine", null, "");
+            }
+            if (nutrition.get("Kohlenhydrate") == null){
+                nutrition.replace("Kohlenhydrate", null, "");
+            }
+            if (nutrition.get("Zucker") == null){
+                nutrition.replace("Zucker", null, "");
+            }
+            if (nutrition.get("Ballaststoffe") == null){
+                nutrition.replace("Ballaststoffe", null, "");
+            }
+            if (nutrition.get("Cholesterin") == null){
+                nutrition.replace("Cholesterin", null, "");
+            }
+            if (nutrition.get("Zucker") == null){
+                nutrition.replace("Zucker", null, "");
+            }
+            if (nutrition.get("GesätigteFettsäuren") == null){
+                nutrition.replace("GesätigteFettsäuren", null, "");
+            }
+            try{
+                Statement statement = con.createStatement();
+                statement.execute("INSERT INTO food SET name = '" + foodList.get(i).getmName() + "', id = " +
+                        foodList.get(i).getmId() +
+                        ", food_group = '" + foodList.get(i).getmFoodGroup() +
+                        "', CALORIES = '" + nutrition.get("Kalorien") +
+                        "', FAT = '" + nutrition.get("Fett") +
+                        "', PROTEINS = '" + nutrition.get("Proteine") +
+                        "', CARBOHYDRATES = '" + nutrition.get("Kohlenhydrate") +
+                        "', SUAGAR = '" + nutrition.get("Zucker") +
+                        "', FIBER = '" + nutrition.get("Ballaststoffe") +
+                        "', CHOLESTEROL = '" + nutrition.get("Cholesterin") +
+                        "', SATURATED_FATS = '" + nutrition.get("GesätigteFettsäuren") + "';");
+            }
+            catch (Exception e){
+                e.printStackTrace();
+            }
+
         }
     }
     public static List<String> readFromFile(){
